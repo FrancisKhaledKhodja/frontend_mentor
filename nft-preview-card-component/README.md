@@ -46,19 +46,10 @@ Users should be able to:
 
 ### What I learned
 
-I 
+The creation of an overlay when the cursor is hovering an image.
+I obtains a correct effect but I am unable to put the white color on the icon view of the SVG.
+It unherits of the color of the background color !!!
 
-
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 
 ## Author
 
