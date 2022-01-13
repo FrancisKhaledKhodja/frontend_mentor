@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0D192C;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+}
+
+.card {
+    width: 350px;
+    height: 596px;
+    border-radius: 15px;
+    margin: auto;
+    position: relative;
+    top: 152px;
+    background-color: #15263F;
+}
+
+.card__image {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    background-image: url("./images/image-equilibrium.jpg");
+    background-size:contain;
+    position: relative;
+    top: 24px;
+    left: 24px;
+    cursor: pointer;
+}
+
+.card__image__layout--icon--view {
+    width: 302px;
+    height: 302px;
+    background-image: url("./images/icon-view.svg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card__image__layout--icon--view:hover {
+    opacity: 1;
+}
+
+.card__image__layout--background--color {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    background-color: #00FFF8;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card__image__layout--background--color:hover {
+    opacity: 0.5;
+}
+
+.card__title {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 350px;
+    left: 24px;
+    cursor: pointer;
+}
+
+.card__title:hover {
+    color: #00FFF8;
+}
+
+.card__info {
+    color: #8BACD9;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    position: absolute;
+    top: 394px;
+    left: 24px;
+}
+
+.card__price--details {
+    width: 301px;
+    height: 20px;
+    position: absolute;
+    top: 470px;
+    left: 24px;
+}
+
+.card__price--details__logo--ethereum {
+    display: inline-block;
+    width: 11px;
+    height: 20px;
+    background-image: url("./images/icon-ethereum.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(50% - 20px/2);
+}
+
+.card__price--details__price {
+    display: inline-block;
+    height: 20px;
+    color: #00FFF8;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    position: absolute;
+    left: 17.48px;
+}
+
+.card__price--details__logo--clock {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background-image: url("./images/icon-clock.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 203.3px;
+}
+
+.card__price--details__delay {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #8BACD9;
+    font-size: 16px;
+    position: absolute;
+    top: calc(50% - 20px/2);
+    left: 227px;
+}
+
+.card__separation {
+    border-top: 1px solid #2E405A;
+    width: 302px;
+    position: absolute;
+    top: 524px;
+    left: 24px;
+}
+
+.card__author {
+    width: 230px;
+    height: 33px;
+    position: absolute;
+    top: 531px;
+    left: 24px;
+}
+
+.card__author__portrait {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-image: url("./images/image-avatar.png");
+    background-size: contain;
+}
+
+.card__author__name {
+    height: 33px;
+    line-height: 33px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    color: #8BACD9;
+    position: absolute;
+    left: 49px;
+}
+
+.card__author__name > span {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.card__author__name > span:hover {
+    color: #00FFF8;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

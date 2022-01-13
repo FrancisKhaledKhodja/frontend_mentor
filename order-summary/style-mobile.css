@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: #E0E8FF;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #1F2E55;
+    font-size: 15px;
+}
+
+.background--svg {
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 709px;
+    margin: 0;
+    padding: 0;
+    padding-top: 75px;
+}
+
+.plan {
+    width: 327px;
+    height: 567px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+.plan__illustration-hero {
+    background-image: url("images/illustration-hero.svg");
+    background-size: cover;
+    width: 327px;
+    height: 160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.plan h1 {
+    display: block;
+    width: 263px;
+    height: 29px;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 900;
+    position: absolute;
+    top: 192px;
+    left: 32px;
+}
+
+.plan .plan__info {
+    display: block;
+    width: 263px;
+    height: 75px;
+    margin: auto;
+    text-align: center;
+    color: #717FA6;
+    line-height: 25px;
+    position: absolute;
+    top: 237px;
+    left: 32px;
+}
+
+.plan__plan--formule {
+    font-size: 14px;
+    background-color: #F7F9FF;
+    border: 16px solid #F7F9FF;
+    width: 279px;
+    height: 80px;
+    border-radius: 11px;
+    position: absolute;
+    top: 336px;
+    left: 24px;
+    vertical-align: middle;
+}
+
+.plan__icon-music {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url("images/icon-music.svg");
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.plan__plan--formule--title--price {
+    display: inline-block;
+    height: 48px;
+    vertical-align: middle;
+    margin-left: 20px
+}
+
+.plan__plan--formule--title {
+    font-weight: 900;
+    line-height: 24px;
+    vertical-align: top;
+    
+}
+
+.plan__plan--price {
+    color: #717FA6;
+    line-height: 24px;
+    vertical-align: bottom;
+}
+
+.plan__change--link {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    color: #382AE1;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 35px;
+
+}
+
+.plan__button--subscribe {
+    width: 279px;
+    height: 50px;
+    background-color: #382AE1;
+    border-radius: 11px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 441px;
+    left: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+
+.plan__button--cancel--order {
+    color: #717FA6;
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    top: 515px;
+    left: 115px;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+

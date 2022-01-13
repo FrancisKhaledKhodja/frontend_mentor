@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: #E0E8FF;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #1F2E55;
+    font-size: 16px;
+}
+
+.background--svg {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    padding-top: 102px;
+}
+
+.plan {
+    width: 450px;
+    height: 697px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+.plan__illustration-hero {
+    background-image: url("images/illustration-hero.svg");
+    background-size: cover;
+    width: 450px;
+    height: 220px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.plan h1 {
+    display: block;
+    width: 354px;
+    height: 37px;
+    text-align: center;
+    margin: auto;
+    font-size: 28px;
+    font-weight: 900;
+    position: absolute;
+    top: 265px;
+    left: 48px;
+}
+
+.plan .plan__info {
+    display: block;
+    width: 354px;
+    height: 78px;
+    margin: auto;
+    text-align: center;
+    color: #717FA6;
+    line-height: 26px;
+    position: absolute;
+    top: 319px;
+    left: 48px;
+}
+
+.plan__plan--formule {
+    background-color: #F7F9FF;
+    border: 24px solid #F7F9FF;
+    width: 354px;
+    height: 96px;
+    border-radius: 11px;
+    position: absolute;
+    top: 417px;
+    left: 48px;
+    vertical-align: middle;
+}
+
+.plan__icon-music {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url("images/icon-music.svg");
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.plan__plan--formule--title--price {
+    display: inline-block;
+    height: 48px;
+    vertical-align: middle;
+    margin-left: 20px
+}
+
+.plan__plan--formule--title {
+    font-weight: 900;
+    line-height: 24px;
+    vertical-align: top;
+    
+}
+
+.plan__plan--price {
+    color: #717FA6;
+    line-height: 24px;
+    vertical-align: bottom;
+}
+
+.plan__change--link {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    color: #382AE1;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 80px;
+
+}
+
+.plan__button--subscribe {
+    width: 354px;
+    height: 50px;
+    background-color: #382AE1;
+    border-radius: 11px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 547px;
+    left: 48px;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+
+.plan__button--cancel--order {
+    color: #717FA6;
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    top: 629px;
+    left: 176px;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
