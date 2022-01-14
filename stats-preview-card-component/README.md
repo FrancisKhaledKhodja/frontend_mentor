@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![Stats preview card - desktop](./screenshots/Stats-preview-card-desktop.png)
-![Stats preview card - mobile](./screenshots/Stats-preview-card-desktop.png)
+![Stats preview card - mobile](./screenshots/Stats-preview-card-mobile.png)
 
 ### Links
 
