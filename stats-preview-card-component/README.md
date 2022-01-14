@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Stats preview card - desktop]("./screenshots/Frontend Mentor Stats preview card component - desktop.png")
-![Stats preview card - mobile]("./screenshots/Frontend Mentor Stats preview card component - mobile.png")
+![Stats preview card - desktop](./screenshots/Frontend Mentor Stats preview card component - desktop.png)
+![Stats preview card - mobile](./screenshots/Frontend Mentor Stats preview card component - mobile.png)
 
 ### Links
 
