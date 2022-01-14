@@ -127,7 +127,7 @@ body {
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     background-color: #AB5CDB;
-    opacity:0.5;
+    mix-blend-mode:multiply;
 }
 
 
