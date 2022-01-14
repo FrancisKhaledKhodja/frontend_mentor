@@ -1,32 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.title--car {
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 40px;
-}
-
-.text--presentation {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    opacity: 0.75;
+button {
+    all: unset;
 }
 
 .container {
     width: 920px;
     height: 500px;
+    border-radius: 8px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    
+    background-color: #E28625;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .card {
@@ -37,12 +32,104 @@
     position: absolute;
 }
 
-.suvs {
-    left: 307px
+.logo  {
+    width: 64px;
+    height: 40px;
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.luxury {
+h1 {
+    display: block;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 123px;
+    left: 48px;
+}
+
+article {
+    display: block;
+    width: 212px;
+    height: 125px;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    position: absolute;
+    top: 196px;
+    left: 48px;
+}
+
+button {
+    display: block;
+    width: 146px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 404px;
+    left: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover  {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+.sedans--card {
+    background-color: #E28625;
+}
+
+.sedans--logo {
+    background-image: url("../images/icon-sedans.svg");
+}
+
+.sedans--button {
+    color: #E28625;
+}
+
+.sedans--button:hover {
+    background-color: #E28625;
+}
+
+.suvs--card {
+    left: 307px;
+    background-color: #006971;
+}
+
+.suvs--logo {
+    background-image: url("../images/icon-suvs.svg");
+}
+
+.suvs--button {
+    color: #006971;
+}
+
+.suvs--button:hover {
+    background-color: #006971;
+}
+
+.luxury--card {
     left: 613px;
+    background-color: #004140;
+}
+
+.luxury--logo {
+    background-image: url("../images/icon-luxury.svg");
+}
+
+.luxury--button {
+    color: #004140;
+}
+
+.luxury--button:hover {
+    background-color: #004140;
 }
 
 .attribution { 
