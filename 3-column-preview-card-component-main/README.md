@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [ghuithub.io](https://FrancisKhaledKhodja.github.io/3-column-preview-card-component-main)
 
 ## My process
 
