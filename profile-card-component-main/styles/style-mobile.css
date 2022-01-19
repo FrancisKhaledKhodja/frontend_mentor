@@ -57,13 +57,13 @@ html {
 
 .card {
     position: relative;
-    width: 35rem;
-    height: 37.4rem;
+    width: 32.6rem; /* mobile */
+    height: 37.4rem; /* mobile */
     border-radius: 1.5rem;
     background-color: white;
     display: grid;
     grid-template-rows:  14rem 7.2rem 2.3rem 0.8rem 1.4rem 2.8rem 2.4rem 4rem 2.5rem;
-    grid-template-columns: 35rem;
+    grid-template-columns: 32.6rem; /* mobile */
     text-align: center;
     z-index: 1;
 }
@@ -72,7 +72,7 @@ html {
     position: relative;
     grid-row: 1 / 2;
     background-image: url("../images/bg-pattern-card.svg");
-    width: 35rem;
+    width: 32.6rem; /* mobile */
     height: 14rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ html {
 .portrait {
     position: absolute;
     top: 9.6rem;
-    left: calc(calc(35rem / 2) - calc(9.6rem / 2));
+    left: calc(calc(32.6rem / 2) - calc(9.6rem / 2)); /* mobile */
     grid-row: 1 / 2;
     background-image: url("../images/image-victor.jpg");
     background-position: center;
@@ -94,7 +94,6 @@ html {
     border: 0.5rem solid white;
     width: 9.6rem;
     height: 9.6rem;
-
 }
 
 .first--last--name--age {
@@ -124,7 +123,7 @@ html {
     width: 2.49rem;
     height: 4rem;
     display: grid;
-    grid-template-columns: 4.7rem 5.9rem 4.6rem 4.7rem 5.4rem 4.3rem 5.4rem;
+    grid-template-columns: 4.1rem 5.9rem 3.8rem 4.7rem 4.6rem 4.3rem 5.2rem; /* mobile */
 }
 
 .stat1 {
@@ -160,58 +159,4 @@ html {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
-
-
-@media screen and (max-width: 37.5rem) {
-
-    .card {
-        position: relative;
-        width: 32.6rem; /* mobile */
-        height: 37.4rem; /* mobile */
-        border-radius: 1.5rem;
-        background-color: white;
-        display: grid;
-        grid-template-rows:  14rem 7.2rem 2.3rem 0.8rem 1.4rem 2.8rem 2.4rem 4rem 2.5rem;
-        grid-template-columns: 32.6rem; /* mobile */
-        text-align: center;
-        z-index: 1;
-    }
-
-    .background--image {
-        position: relative;
-        grid-row: 1 / 2;
-        background-image: url("../images/bg-pattern-card.svg");
-        width: 32.6rem; /* mobile */
-        height: 14rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-top-left-radius: 1.5rem;
-        border-top-right-radius: 1.5rem;
-    }
-
-    .portrait {
-        position: absolute;
-        top: 9.6rem;
-        left: calc(calc(32.6rem / 2) - calc(9.6rem / 2)); /* mobile */
-        grid-row: 1 / 2;
-        background-image: url("../images/image-victor.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-radius: 50%;
-        border: 0.5rem solid white;
-        width: 9.6rem;
-        height: 9.6rem;
-    }
-    
-    .stats {
-        grid-row: 8 / 9;
-        width: 2.49rem;
-        height: 4rem;
-        display: grid;
-        grid-template-columns: 4.1rem 5.9rem 3.8rem 4.7rem 4.6rem 4.3rem 5.2rem; /* mobile */
-    }
-
 }
