@@ -197,6 +197,9 @@ h1 {
         padding: 2.4rem; /* mobile */
     }
 
+    .card--bottom--left__button {
+        width: 26.3rem;
+    }
     .card--bottom--right {
         grid-row: 3 / 4; /* mobile */
         grid-column: 1 / 2; /* mobile */
