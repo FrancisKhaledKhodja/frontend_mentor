@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot desktop](./screenshots/four-card-feature-section-desktop.png)
-![screenshot mobile](./screenshots/four-card-feature-section-mobile.png)
+![screenshot desktop](./screenshots/social-proof-section-desktop.png)
+![screenshot mobile](./screenshots/social-proof-section-mobile.png)
 
 ### Links
 
