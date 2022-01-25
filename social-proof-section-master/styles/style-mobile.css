@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Spartan', sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F2F2F2;
+}
+
+/* PRINCIPAL CARD */
+.card {
+    position: relative;
+    background-color: var(--white);
+    width: 37.5rem; /* mobile */
+    height: 153rem; /* mobile */
+    padding-top: 8rem; /* mobile */
+    padding-left: 2.4rem; /* mobile */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.background--pattern--top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/bg-pattern-top-mobile.svg"); /* mobile */
+    width: 37.5rem; /* mobile */
+    height: 23.2rem; /* mobile */
+}
+
+.background--pattern--bottom {
+    position: absolute;
+    background-image: url("../images/bg-pattern-bottom-mobile.svg"); /* mobile */
+    width: 37.5rem; /* mobile */
+    height: 49.5rem; /* mobile */
+    right: 0;
+    bottom: 0;
+}
+
+
+/* CARD TOP PART */
+.card--part--one {
+    width: 32.7rem; /* mobile */
+    height: 52.6rem; /* mobile */
+    margin-bottom: 4.9rem; /* mobile */
+    display: flex;
+    flex-direction: column; /* mobile */
+}
+
+.card--part--one .title {
+    width: 32.7rem; /* mobile */
+    height: 22rem; /* mobile */
+    margin-bottom: 4rem; /* mobile */
+    text-align: center; /* mobile */
+}
+
+.card--part--one .title h1 {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.114286rem;
+    margin-bottom: 0.6rem;
+    color: var(--very-dark-magenta);
+}
+
+.card--part--one .title p {
+    display: block;
+    margin-top: 0.6rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.05rem;
+    color: var(--dark-grayish-magenta);
+}
+
+.rates--satisfaction {
+    width: 32.7rem;
+    height: 26.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rate--satisfaction {
+    width: 32.7rem;
+    height: 7.8rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1.6rem;
+    background-color: var(--light-grayish-magenta);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rate--satisfaction .stars--icon {
+    background-image: url("../images/icon-star.svg");
+    background-repeat: space;
+    width: 10.19rem;
+    height: 1.6rem;
+}
+
+.rate--satisfaction p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: var(--very-dark-magenta);
+}
+
+/* CARD BOTTOM PART */
+
+.card--part--two {
+    width: 32.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony {
+    width: 32.7rem;
+    height: 24.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    padding: 4rem 3.2rem 3.2rem 3.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.testimony--head {
+    margin-bottom: 2.6rem;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 2rem 2rem;
+    column-gap: 2.3rem;
+    align-items: center;
+}
+
+.portrait {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.portrait--colton {
+    background-image: url(../images/image-colton.jpg);
+}
+
+.portrait--irene {
+    background-image: url(../images/image-irene.jpg);
+}
+
+.portrait--anne {
+    background-image: url(../images/image-anne.jpg);
+}
+
+.name {
+    font-weight: bold;
+}
+
+.testimony--verified {
+    color: var(--soft-pink);
+}
+
+.testimony:nth-child(2) {
+    transform: translateY(1.6rem);
+}
+
+.testimony:nth-child(3) {
+    transform: translateY(3.2rem);
+}
+
+blockquote {
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: -0.232143px;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
