@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: #FFF;
+}
+
+.container {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("../images/bg-desktop.svg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing--page {
+    width: 144rem;
+    height: 80rem;
+    display: grid;
+    grid-template-columns: 8rem 69.6rem minmax(min-content, 58.4rem) 1fr;
+    grid-template-rows: 9.4rem 10.6rem 49.3rem 1fr;
+}
+
+.logo--huddle {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-image: url("../images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 26.4rem 4.9rem;
+    background-position: bottom left;
+    transform: translateX(-5%);
+}
+
+.illustration--mockups {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background-image: url("../images/illustration-mockups.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 69.3rem 49.3rem;
+}
+
+.presentation {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5.9rem;
+}
+
+h1 {
+    display: block;
+    margin-top: 3.2rem;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+    font-family: Poppins;
+}
+
+.text--presentation {
+    display: block;
+    width: 52rem;
+    margin-top: 2.4rem;
+    font-family: "Open Sans";
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+.cta--register {
+    display: block;
+    margin-top: 2.4rem;
+    width: 20rem;
+    height: 5.6rem;
+    border-radius: 2.8rem;
+    background-color: #FFF;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    line-height: 5.6rem;
+    text-align: center;
+    color: #684BB1;
+    box-shadow: 0.2rem 0.4rem 0.9rem 0.3rem rgba(0, 0, 0, 0.258633);
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.cta--register:hover {
+    background: #E880E8;
+    color: white;
+}
+
+.logos {
+    grid-row: -2 / -1;
+    grid-column: -3 / -2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1.6rem;
+    cursor: pointer;
+}
+
+.logo--facebook {
+    background-image: url("../images/icons8-facebook.svg");
+}
+
+.logo--facebook:hover {
+    background-image: url("../images/icons8-facebook-pink.svg");
+}
+
+.logo--twitter {
+    background-image: url("../images/icons8-twitter.svg");
+}
+
+.logo--twitter:hover {
+    background-image: url("../images/icons8-twitter-pink.svg");
+}
+
+.logo--instagram {
+    background-image: url("../images/icons8-instagram.svg");
+}
+
+.logo--instagram:hover {
+    background-image: url("../images/icons8-instagram-pink.svg");
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:50rem) {
+    .container {
+        background-image: url("../images/bg-mobile.svg");
+        align-items: flex-start;
+    }
+
+    .landing--page {
+        width: 37.5rem;
+        height: 80rem;
+        display: grid;
+        grid-template-columns: 4rem minmax(min-content, 29.6rem) 1fr;
+        grid-template-rows: 5.8rem 6.9rem 20.9rem 6rem 27.2rem 6.4rem 2.8rem 1fr;
+    }
+
+    .logo--huddle {
+        background-size: 12.1rem 2.5rem;
+        transform: translateX(-5%);
+    }
+
+    .illustration--mockups {
+        background-size: 29.6rem 20.9rem;
+    }
+
+    .presentation {
+        grid-row: 5 / 6;
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        text-align: center;
+    }
+
+    .text--presentation {
+        width: 30.4rem;
+        margin-top: 1.6rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: center;
+    }
+
+    .logos {
+        grid-column: 2 / 3;
+    }
+
+    .cta--register {
+        margin: 2.4rem auto 0;
+        height: 4rem;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        line-height: 4rem;
+        box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.269022);
+    }
+
+    .logos {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-right: 1.05rem;
+    }
+
+
+}
+
+
