@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    background-color: #D5E1EF;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: absolute;
+    background-color: #FFF;
+    width: 32rem;
+    height: 49.7rem;
+    border-radius: 2rem;
+    box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.0476518);
+}
+
+.qr--code {
+    width: 28.8rem;
+    height: 28.8rem;
+    border-radius: 1rem;
+    margin:1.6rem;
+    background-image: url("../images/image-qr-code.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.presentation--title {
+    display: block;
+    margin: 2.6rem;
+    font-size: 2.2rem;
+    line-height: 2.772rem;
+    font-weight: 700;
+    color: #1F314F;
+    text-align: center;
+}
+
+.presentation--text {
+    display: block;
+    margin: 1.6rem 3.2rem;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    text-align: center;
+    letter-spacing: 0.1875px;
+    color: #7D889E;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
