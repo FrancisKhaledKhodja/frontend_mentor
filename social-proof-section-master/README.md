@@ -44,7 +44,6 @@ Users should be able to:
 
 The approach of flexbox and desktop first but difficulties to switch to the mobile view. I am not very satisfied about my css redaction: I had to write two files for the css....
 
-
 ## Author
 
 - Github - [@FrancisKhaledKhodja](https://github.com/FrancisKhaledKhodja)
