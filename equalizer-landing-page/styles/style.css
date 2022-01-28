@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 37.5rem;
+    height: 194.5rem;
+    background-color: #FCFAF9;
+    background-image: url("../images/bg-main-mobile.png");
+    background-position: 0 -22%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__logo--equalizer {
+    background-image: url("../images/logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 14.7rem;
+    height: 3.3rem;
+    margin: 4rem 2.4rem 6.4rem;
+}
+
+.card__presentation {
+    width: 32rem;
+    height: 32.7rem;
+    margin: 0 2.4rem 16.6rem;
+    color: #191826;
+}
+
+.card__presentation__title {
+    display: block;
+    width: 32.7rem;
+    height:14.4rem;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 4.8rem;
+    letter-spacing: -0.0454rem;
+    margin-bottom: 2rem;
+}
+
+.card__presentation__text {
+    display: block;
+    width: 32.7rem;
+    height: 15.6rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.bg-pattern {
+    width: 37.5rem;
+    height: 60rem;
+    border-radius: 1.2rem;
+    background-color: #191826;
+    background-image: url("../images/bg-pattern-2.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 73%;
+    margin-bottom: 39rem;
+}
+
+/* CARD__CONTACT */
+
+.card__contact {
+    width: 32.7rem;
+    height: 16.9rem;
+    margin: 0 2.4rem;
+    color: #191826;
+    font-size: 1.6rem;
+}
+
+.card__contact__logo--equalizer {
+    background-image: url("../images/logo.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 14.7rem;
+    height: 3.3rem;
+    margin-bottom: 3.2rem;
+}
+
+.card__contact__email {
+    margin-bottom: 6.4rem;
+}
+
+.card__contact__email a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #191826;
+}
+
+.card__logos--social--networks {
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo--social--networks {
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.card__logos--social--networks__facebook {
+    background-image: url("../images/icon-facebook.svg");
+}
+
+.card__logos--social--networks__instagram {
+    background-image: url("../images/icon-instagram.svg");
+}
+
+.card__logos--social--networks__twitter {
+    background-image: url("../images/icon-twitter.svg");
+}
+
+.logo--social--networks:hover {
+    filter: invert(56%) sepia(71%) saturate(1328%) hue-rotate(323deg) brightness(99%) contrast(97%);
+}
+
+/* MOBILE PHONE PICTURE ILLUSTRATION--APP */
+
+.card__illustration-app {
+    display: none;
+    position: absolute;
+    top: 52.4rem;
+    left: 8.073rem;
+    width: 20.9rem; 
+    height: 43rem;
+    background-image: url("../images/illustration-app.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* PREMIUM EQ FORMULE--CARD */
+
+.card__formule--card {
+    display: none;
+    position: absolute;
+    top: 100.2rem;
+    width: 37.5rem;
+    height: 54.6rem;
+    border-radius: 1.2rem;
+    background-color: #FA7453;
+    color: #FCFAF9;
+}
+
+.card__formule--card__title {
+    display: block;
+    width: 30.2rem;
+    height: 4rem;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+    margin: 4.8rem 3.6rem 1.2rem;
+}
+
+.card__formule--card__text--presentation {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    height: 14rem;
+    width: 30.2rem;
+    margin: 0 3.6rem 3.6rem;
+}
+
+.card__formule--card__price {
+    display: block;
+    width: 16.5rem;
+    height: 5.2rem;
+    margin: 0 4.2rem 3.2rem;
+}
+
+.span--price {
+    display: inline-block;
+    height: 5.2rem;
+    font-weight: bold;
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+}
+
+.span--frequency--payment {
+    display: inline-block;
+    height: 5.2rem;
+    font-size: 2rem;
+    line-height: 5.2rem;
+    letter-spacing: -0.02rem;
+    vertical-align:text-bottom;
+}
+
+.button {
+    width: 29.6rem;
+    height: 6.1rem;
+    border-radius: 1.2rem;
+    line-height: 6.1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: -0.018rem;
+    margin: 0 3.7rem 1.6rem 4.2rem;
+    transition: background-color 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon--os {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: 1.7rem;
+    height: 2rem;
+    margin-right: 0.78rem;
+}
+
+.logo--ios {
+    background-image: url("../images/icon-apple.svg");
+}
+
+.logo--android {
+    background-image: url("../images/icon-android.svg");
+}
+
+.card__formule--card__button--download--ios {
+    background-color: #191826;
+}
+
+.card__formule--card__button--download--ios:hover {
+    background-color: #66E2DC;
+}
+
+.card__formule--card__button--download--android {
+    background-color: #FCFAF9;
+    color: #191826;
+}
+
+.card__formule--card__button--download--android:hover {
+    background-color: #FFB964;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
