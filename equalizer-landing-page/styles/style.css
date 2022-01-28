@@ -17,6 +17,7 @@ html {
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .card {
@@ -29,6 +30,7 @@ html {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
 
 .card__logo--equalizer {
@@ -67,8 +69,10 @@ html {
     line-height: 2.6rem;
 }
 
+/* BG-PATTERN2 */
+
 .bg-pattern {
-    width: 37.5rem;
+    /* width: 37.5rem; */
     height: 60rem;
     border-radius: 1.2rem;
     background-color: #191826;
@@ -83,8 +87,8 @@ html {
 
 .card__contact {
     width: 32.7rem;
-    height: 16.9rem;
-    margin: 0 2.4rem;
+    height: 25.7rem;
+    margin-left: 2.4rem;
     color: #191826;
     font-size: 1.6rem;
 }
@@ -99,30 +103,32 @@ html {
     margin-bottom: 3.2rem;
 }
 
-.card__contact__email {
+.card__contact__contact--us {
+    width: 32.7rem;
+    height: 10.5rem;
+    line-height: 2.6rem;
     margin-bottom: 6.4rem;
 }
 
-.card__contact__email a {
+a {
     text-decoration: none;
     font-weight: bold;
     color: #191826;
 }
 
 .card__logos--social--networks {
-    width: 10rem;
+    width: 11rem;
     height: 2rem;
-    display: flex;
-    flex-direction: row;
 }
 
 .logo--social--networks {
+    display: inline-block;
+    margin-right: 2rem;
     width: 2rem;
     height: 2rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-right: 2rem;
     cursor: pointer;
 }
 
@@ -136,7 +142,9 @@ html {
 
 .card__logos--social--networks__twitter {
     background-image: url("../images/icon-twitter.svg");
+    margin-right: 0;
 }
+
 
 .logo--social--networks:hover {
     filter: invert(56%) sepia(71%) saturate(1328%) hue-rotate(323deg) brightness(99%) contrast(97%);
@@ -145,7 +153,6 @@ html {
 /* MOBILE PHONE PICTURE ILLUSTRATION--APP */
 
 .card__illustration-app {
-    display: none;
     position: absolute;
     top: 52.4rem;
     left: 8.073rem;
@@ -159,7 +166,6 @@ html {
 /* PREMIUM EQ FORMULE--CARD */
 
 .card__formule--card {
-    display: none;
     position: absolute;
     top: 100.2rem;
     width: 37.5rem;
@@ -176,7 +182,7 @@ html {
     font-weight: bold;
     font-size: 3.2rem;
     line-height: 4.0rem;
-    margin: 4.8rem 3.6rem 1.2rem;
+    margin: 4.8rem auto 1.2rem;
 }
 
 .card__formule--card__text--presentation {
@@ -185,14 +191,14 @@ html {
     line-height: 2.8rem;
     height: 14rem;
     width: 30.2rem;
-    margin: 0 3.6rem 3.6rem;
+    margin: 0 auto 3.6rem;
 }
 
 .card__formule--card__price {
     display: block;
-    width: 16.5rem;
+    width: 30.2rem;
     height: 5.2rem;
-    margin: 0 4.2rem 3.2rem;
+    margin: 0 auto 3.2rem;
 }
 
 .span--price {
@@ -201,6 +207,7 @@ html {
     font-weight: bold;
     font-size: 6.5rem;
     line-height: 5.2rem;
+    margin-right: 1.6rem;
 }
 
 .span--frequency--payment {
@@ -221,7 +228,7 @@ html {
     font-weight: bold;
     font-size: 1.8rem;
     letter-spacing: -0.018rem;
-    margin: 0 3.7rem 1.6rem 4.2rem;
+    margin: 0 auto 1.6rem;
     transition: background-color 0.5s;
     display: flex;
     flex-direction: row;
@@ -265,11 +272,198 @@ html {
     background-color: #FFB964;
 }
 
-/* FOOTER */
+/* TABLET */
+@media screen and (min-width: 80rem) and (max-width: 120rem) {
+    .card {
+        width: 76.8rem; /**/
+        height: 178.1rem; /**/
+        background-image: url("../images/bg-main-tablet.png"), url("../images/bg-pattern-1.svg"); /**/
+        background-position: 80% -18%, 108% -2.5%; /**/
+        background-size: 98.3rem 80.8rem, 26.6rem 40rem; /**/
+    }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    .card__logo--equalizer {
+        margin: 6.2rem 3.9rem 9.5rem; /**/
+    }
+
+    .card__presentation {
+        width: minmax(32rem, 52rem); /**/
+        height: 33.2rem; /**/
+        margin: 0 3.9rem 24.9rem; /**/
+    }
+
+    .card__presentation__title {
+        width: 52rem; /**/
+        height: 19.2rem; /**/
+        font-size: 6.4rem; /**/
+        line-height: 6.4rem; /**/
+        letter-spacing: -0.07272rem; /**/
+        margin-bottom: 2.8rem; /**/
+    }
+
+    .card__presentation__text {
+        width: 51.4rem;/**/
+        height: 11.2rem; /**/
+        font-size: 1.8rem; /**/
+        line-height: 2.8rem; /**/
+    }
+
+    .bg-pattern {
+        width: 69.6rem;
+        height: 60rem;
+        background-size: 28rem 42rem;
+        background-position: 54% 0;
+        margin: 0 auto 18.3rem; /**/
+    }
+
+    .card__contact {
+        width: 69.6rem; /**/
+        height: 14.3rem; /**/
+        margin-left: 3.3rem; /**/
+    }
+
+    .card__contact__logo--equalizer {
+        margin-bottom: 3.2rem; /**/
+    }
+
+    .card__contact__contact--us--logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: unset;
+    }
+
+    .card__contact__contact--us {
+        width: 36.6rem; /**/
+        height:7.9rem; /**/
+        margin: unset;
+    }
+
+    /* MOBILE PHONE PICTURE ILLUSTRATION--APP */
+
+    .card__illustration-app {
+        top: 63.2rem;
+        left: 9.7rem;
+        width: 27.021rem; 
+        height: 55.6rem;
+    }
+
+    /* PREMIUM EQ FORMULE--CARD */
+
+    .card__formule--card {
+        top: 92rem;
+        left: 27.2rem;
+        width: 39.9rem;
+        height: 54.6rem;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width:120rem) {
+    .card {
+        width: 144rem; /**/
+        height: 183.2rem; /**/
+        background-image: url("../images/bg-main-desktop.png"), url("../images/bg-pattern-1.svg"); /**/
+        background-position: -260px -310px, 100% -3%; /**/
+        background-size: 191.3rem 205.8rem, 31.2rem 46.8rem; /**/
+    }
+
+    .card__logo--equalizer {
+        margin: 6.2rem 16.5rem 12.7rem; /**/
+    }
+
+    .card__presentation {
+        width: 101.5rem; /**/
+        height: 31.8rem; /**/
+        margin: 0 16.5rem 32.1rem; /**/
+    }
+
+    .card__presentation__title {
+        width: 101.5rem; /**/
+        height: 17.6rem; /**/
+        font-size: 8.8rem; /**/
+        line-height: 8.8rem; /**/
+        letter-spacing: -0.1rem; /**/
+        margin-bottom: 4rem; /**/
+    }
+
+    .card__presentation__text {
+        width: 82.5rem;/**/
+        height: 10.2rem; /**/
+        font-size: 2rem; /**/
+        line-height: 3.4rem; /**/
+    }
+
+    .bg-pattern {
+        width: 111rem; /**/
+        height: 60rem; /**/
+        background-size: 31.2rem 46.8rem; /**/
+        background-position: 42.1% -30%;
+        margin: 0 16.5rem 20.2rem; /**/
+    }
+
+    .card__contact {
+        width: 111rem; /**/
+        height: 7.9rem; /**/
+        margin: 0 16.5rem; /**/
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card__contact__logo--equalizer {
+        margin: unset; /**/
+    }
+
+    .card__contact__contact--us--logos {
+        height: 7.9rem;
+        width: 82.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* MOBILE PHONE PICTURE ILLUSTRATION--APP */
+    .card__illustration-app {
+        top: 64.7rem;
+        left: 26.7rem;
+        width: 31.2rem; 
+        height: 64.2rem;
+    }
+
+    /* PREMIUM EQ FORMULE--CARD */
+    .card__formule--card {
+        top: 95rem;
+        left: 73.4rem;
+        width: 44.6rem;
+        height: 62.5rem;
+    }
+
+    .card__formule--card__title {
+        width: 33.3rem;
+        height: 4rem;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 4.0rem;
+        margin: 5.8rem auto 2.2rem;
+    }
+    
+    .card__formule--card__text--presentation {
+        font-size: 2rem;
+        line-height: 3.4rem;
+        height: 17rem;
+        width: 33.3rem;
+        margin: 0 auto 3.9rem;
+    }
+
+    .card__formule--card__price {
+        width: 33.3rem;
+        height: 5.2rem;
+        margin: 0 auto 4.6rem;
+    }
+
+    .button {
+        width: 33.3rem;
+        height: 6.1rem;
+    }
+
 }
