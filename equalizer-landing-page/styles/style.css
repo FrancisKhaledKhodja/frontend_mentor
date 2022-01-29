@@ -416,10 +416,17 @@ a {
 
     .card__contact__contact--us--logos {
         height: 7.9rem;
-        width: 82.6rem;
+        width: 83rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .card__contact__contact--us {
+
+        width: 34rem;
+        height: 7.9rem;
+        margin: unset;
     }
 
     /* MOBILE PHONE PICTURE ILLUSTRATION--APP */
