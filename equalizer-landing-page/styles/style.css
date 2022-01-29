@@ -273,7 +273,7 @@ a {
 }
 
 /* TABLET */
-@media screen and (min-width: 80rem) and (max-width: 120rem) {
+@media screen and (min-width: 38rem) and (max-width: 77rem) {
     .card {
         width: 76.8rem; /**/
         height: 178.1rem; /**/
@@ -359,7 +359,7 @@ a {
 }
 
 /* DESKTOP */
-@media screen and (min-width:120rem) {
+@media screen and (min-width:77rem) {
     .card {
         width: 144rem; /**/
         height: 183.2rem; /**/
