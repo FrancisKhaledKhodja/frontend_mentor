@@ -182,3 +182,11 @@ body {
 
 /* FOOT BLOCK */
 
+.foot--block {
+    background-image: url("../images/mobile/image-footer.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-grow: 2;
+}
+
