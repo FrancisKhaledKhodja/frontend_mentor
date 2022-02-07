@@ -463,6 +463,6 @@ body {
 
     .foot--block__button--download {
         margin: unset;
-        align-self: flex-end;
+        align-self: center;
     }
 }
