@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [faq-accordion-card-main](d:\Users\Khaled-Khodja\FRONTEND_MENTOR\FrancisKhaledKhodja.github.io\faq-accordion-card-main)
 
 ## My process
 
@@ -50,4 +49,4 @@ Th use of javascript to interact with th web page.
 ## Author
 
 - Linkedin - [Francis KHALED KHODJA](https://linkedin.com/in/francis-khaled-khodja-249b69113)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [Francis KHALED KHODJA](https://www.frontendmentor.io/profile/FrancisKhaledKhodja)
