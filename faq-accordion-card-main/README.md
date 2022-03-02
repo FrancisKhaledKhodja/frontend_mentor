@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [faq-accordion-card-main](d:\Users\Khaled-Khodja\FRONTEND_MENTOR\FrancisKhaledKhodja.github.io\faq-accordion-card-main)
+- Solution URL: [faq-accordion-card-main](https://franciskhaledkhodja.github.io)
 
 ## My process
 
