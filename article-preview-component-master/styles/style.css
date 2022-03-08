@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECF2F8;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    width: 73rem;
+    height: 28rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 4rem 4rem -1rem rgba(201, 213, 225, 0.503415);
+}
+
+.card__picture {
+    background-image: url("../images/drawers.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28.5rem;
+    height: 28rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.card__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(73rem - 28.5rem);
+    padding: 3.2rem 4rem;
+}
+
+.card__description__title {
+    color: #48556A;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    letter-spacing: 0.025rem;
+    margin-bottom: 1.2rem;
+}
+
+.card__description__text {
+    color: #6E8098;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.012rem;
+    margin-bottom: 2rem;
+}
+
+.card__description__contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card_description__contact__portrait--picture {
+    background-image: url("../images/avatar-michelle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1.6rem;
+}
+
+.card__description__contact__text {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.card__description__contact__text__name {
+    color: #48556A;
+    font-weight: 700;
+}
+
+.card__description__contact__text__published--date {
+    color: #9DAEC2;
+}
+
+.card_decription__contact__share {
+    background: url("../images/icon-share.svg"), #ECF2F8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.3rem, 100%;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card__description__share {
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #48556A;
+    border-radius: 1rem;
+    width: 24.8rem;
+    height: 5.5rem;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1rem 1rem rgba(201, 213, 225, 0.503415);
+    transform: translate(26.5rem, 12.9rem);
+}
+
+.card__description__share--point {
+    position: absolute;
+    background-color: #48556A;
+    width: 2.4rem;
+    height: 2.4rem;
+    transform: translate(calc(12.4rem - 1.2rem), calc(5.5rem - 1.2rem)) rotate(45deg);
+    top: 0;
+    left: 0;
+}
+
+.card__description__share__text {
+    color: #9DAEC2;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+}
+
+.card__discription__share__icon--facebook {
+    background-image: url("../images/icon-facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.6rem;
+    cursor:pointer;
+}
+
+.card__discription__share__icon--twitter {
+    background-image: url("../images/icon-twitter.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 1.625rem;
+    margin-right: 1.6rem;
+    cursor:pointer;
+}
+
+.card__discription__share__icon--pinterest {
+    background-image: url("../images/icon-pinterest.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    cursor:pointer;
+}
+
+.card_decription__contact__share--2 {
+    display: none;
+    background: url("../images/icon-share-2.svg"), #6E8098;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.3rem, 100%;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 70em) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 32.7rem;
+        height: 51.2rem;
+    }
+
+    .card__picture {
+        width: 32.7rem;
+        height: 20rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+
+    .card__description {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: calc(51.2rem - 20rem);
+        width: 32.7rem;
+        padding: 3.6rem 3.2rem;
+    }
+
+    .card__description__title {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.02rem;
+    }
+
+    .card__description__text {
+        margin-bottom: 3.2rem;
+    }
+
+    .card__description__share {
+        position: absolute;
+        display: none;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        background-color: #48556A;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom: 1rem;
+        width: 32.7rem;
+        height: 6.4rem;
+        transform: translateY(calc(51.2rem - 20rem - 6.4rem));
+    }
+
+    .card__description__share--point {
+        display: none;
+    }
+
+    .card__description__share__text {
+        margin-left: 3.2rem;
+        margin-right: 2.1rem;
+    }
+
+    .card__discription__share__icon--pinterest {
+        margin-right: 5.6rem;
+    }
+
+    .card_decription__contact__share--2 {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+
+
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
