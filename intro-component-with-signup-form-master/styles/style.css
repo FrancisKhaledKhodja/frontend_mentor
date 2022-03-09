@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/bg-intro-desktop.png"), #FF7979;
+    background-repeat: repeat;
+    background-size: auto, 100%;
+}
+
+.presentation {
+    width: 52.5rem;
+    color: #FFF;
+}
+
+.presentation__title {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 1.1rem;
+}
+
+.presentation__text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+}
+
+.form--and--buttons {
+    width: 54rem;
+    height: 55.8rem;
+}
+
+.form--and--buttons__button--try--1 {
+    width: 54rem;
+    height: 6rem;
+    background-color: #5E54A4;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 6rem;
+    letter-spacing: 0.026rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.14688);
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+}
+
+.form--and--buttons__button--try--1 > span {
+    font-weight: 700;
+}
+
+.form--and--buttons__form {
+    width: 54rem;
+    background-color: #FFF;
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.14688);
+    padding: 2rem 4rem 4rem;
+}
+
+.form--and--buttons__form input {
+    width: 46rem;
+    height: 5.6rem;
+    border: 0.1rem solid #DEDEDE;
+    border-radius: 0.5rem;
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+    opacity: 0.75;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #3D3B48;
+}
+
+.form--and--buttons input.error {
+    border: 2px solid #FF7979;
+}
+
+.input {
+    position: relative;
+}
+
+.message--error {
+    display: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: right;
+    color: #FF7979;
+    margin-bottom: 0.6rem;
+}
+
+.message--error.error {
+    display: block;
+}
+
+.icon--error {
+    display: none;
+    position: absolute;
+    background-image: url("../images/icon-error.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2.4rem;
+    height: 2.4rem;
+    top: calc(2rem + 5.6rem / 2);
+    transform: translateY(-50%);
+    margin-left: 40.9rem;
+    z-index: 2;
+}
+
+.icon--error.error {
+    display: block;
+}
+
+.form--and--buttons__form input:focus {
+    border: 0.1rem solid #5E54A4;
+}
+
+
+.form--and--buttons__form__button--try--2 {
+    width: 46rem;
+    height: 5.6rem;
+    background-color: #38CC8B;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 5.6rem;
+    text-align: center;
+    box-shadow: inset 0 -0.4rem 0 rgba(0, 0, 0, 0.0908818);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.form--and--buttons__form__text {
+    color: #BAB7D4;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form--and--buttons__form__text > span {
+    color: #FF7979;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .presentation {
+        width: 32.7rem;
+        text-align: center;
+    }
+
+    .presentation__title {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+        letter-spacing: -0.03rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .presentation__text {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.6rem;
+        margin-bottom: 6.4rem;
+    }
+
+    .form--and--buttons {
+        width: 32.7rem;
+        height: 55.4rem;
+    }
+
+    .form--and--buttons__button--try--1 {
+        width: 32.7rem;
+        height: 8.8rem;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        padding: 1.8rem 6.7rem;
+    }
+
+    .form--and--buttons__form {
+        width: 32.7rem;
+        padding: 1.2rem 2.4rem;
+    }
+
+    .form--and--buttons__form input {
+        width: 27.9rem;
+        padding-left: 1.94rem;
+        margin-top: 1.6rem;
+    }
+
+    .form--and--buttons__form__button--try--2 {
+        width: 27.9rem;
+    }
+
+    .icon--error {
+        top: calc(1.6rem + 5.6rem / 2);
+        margin-left: 22.9rem;
+    }
+}
