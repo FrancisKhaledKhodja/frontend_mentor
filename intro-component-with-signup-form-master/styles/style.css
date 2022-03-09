@@ -137,6 +137,8 @@ html {
     width: 46rem;
     height: 5.6rem;
     background-color: #38CC8B;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 600;
