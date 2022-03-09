@@ -171,10 +171,11 @@ html {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5em) {
 
     .container {
         flex-direction: column;
+        min-height: 110rem;
     }
 
     .presentation {
