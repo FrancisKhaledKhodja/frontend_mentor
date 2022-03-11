@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Chivo', sans-serif;
+    color: #FFF;
+}
+
+.container {
+    background: url("../images/desktop/logo.svg"), url("../images/desktop/bg-pattern-dots.svg"), url("../images/desktop/image-host.jpg"), #121725;
+    background-position: 16.5rem 10.2rem, 120.8rem 71.8rem, 55.2rem 13rem, center;
+    background-repeat: no-repeat;
+    background-size: 13.45rem 5.6rem, 23.2rem 10.4rem, 88.8rem 64rem, contain;
+    min-width: 144rem;
+    min-height: 90rem;
+}
+
+.site--presentation {
+    position: relative;
+    background-color: #121725;
+    top: 26.1rem;
+    left: 16.5rem;
+    width: 72.3rem;
+    height: 50.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.site--presentation__title {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 8.1rem;
+    margin-bottom: 2.4rem;
+}
+
+.site--presentation__title__green--text {
+    color: #54E6AF;
+}
+
+.site--presentation__presentation--text {
+    width: 44.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: #C2CBE5;
+    margin-bottom: 4rem;
+}
+
+form {
+    position: relative;
+    margin-bottom: 4.2rem;
+}
+
+.site--presentation__email {
+    width: 42.7rem;
+    height: 5.6rem;
+    background-color: #2C344B;
+    border: unset;
+    border-radius: 2.8rem;
+    color: #FFF;
+    font-size: 1.4rem;
+    padding-left: 3.2rem;
+    opacity: 0.5;
+}
+
+.site--presentation__button--email {
+    position: absolute;
+    width: 16.2rem;
+    height: 4.6rem;
+    background-color: #54E6AF;
+    border-radius: 2.3rem;
+    color:#121725;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 4.6rem;
+    text-align: center;
+    top: 0.5rem;
+    left: calc(42.7rem - 16.2rem - 0.5rem);
+    cursor: pointer;
+}
+
+.error--message {
+    visibility: hidden;
+    color: #FB3E3E;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-left: 3.2rem;
+    padding-top: 0.8rem;
+}
+
+.error--message.error {
+    visibility: visible;
+}
+
+.site--presentation__button--email:hover {
+    background-color: #B3FFE2;
+}
+
+.site--presentation__logos--podcast {
+    display: flex;
+    align-items: center;
+    height: 2.9rem;
+    width: 53.6rem;
+}
+
+.logo--network {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo--spotify {
+    background-image: url("../images/desktop/spotify.svg");
+    width: 9.6rem;
+    height: 2.9rem;
+    margin-right: 4rem;
+}
+
+.logo--apple--podcast {
+    background-image: url("../images/desktop/apple-podcast.svg");
+    width: 7.8rem;
+    height: 2.9rem;
+    margin-right: 4.1rem;
+}
+
+.logo--google--podcast {
+    background-image: url("../images/desktop/google-podcasts.svg");
+    width: 12.5rem;
+    height: 1.8rem;
+    margin-right: 2.7rem;
+}
+
+.logo--pocket--casts {
+    background-image: url("../images/desktop/pocket-casts.svg");
+    width: 12.9rem;
+    height: 2.6rem;
+}
+
+@media screen and (min-width:40em) and (max-width: 50em) {
+
+    .container {
+        background: url("../images/desktop/logo.svg"), url("../images/desktop/bg-pattern-dots.svg") , url("../images/tablet/image-host.jpg"), #121725;
+        background-position: 3.9rem 5rem, 3rem 92rem, 27.7rem 0, center;
+        background-repeat: no-repeat;
+        background-size: 13.45rem 5.6rem, 23.2rem 10.4rem, 49.1rem 76.7rem, contain;
+        min-width: 76.8rem;
+        min-height: 102.4rem;
+    }
+
+    .site--presentation {
+        position: relative;
+        background-color: #121725;
+        top: 25.8rem;
+        left: 3.9rem;
+        width: 63.5rem;
+        height: 50.9rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site--presentation__title {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        margin-top: 9.3rem;
+        margin-bottom: 3.1rem;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .container {
+        background: url("../images/desktop/logo.svg"), url("../images/mobile/image-host.jpg"),#121725;
+        background-position: top 6.2rem center, center;
+        background-repeat: no-repeat;
+        background-size: 13.45rem 5.6rem, contain, contain;
+        min-width: 37.5rem;
+        min-height: 66.7rem;
+        display: flex;
+        justify-content: center;
+        background-blend-mode:normal ,multiply;
+    }
+
+    .site--presentation {
+        top: 17.5rem;
+        left: unset;
+        background-color: unset;
+        width: 32.7rem;
+        height: 39.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site--presentation__title {
+        font-size: 2.6rem;
+        line-height: 3.8rem;
+        margin-top: 0;
+        margin-bottom: 1.6rem;
+        text-align: center;
+    }
+
+    .site--presentation__presentation--text {
+        width: 32.7rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        color: #C2CBE5;
+        margin-bottom: 3.3rem;
+        text-align: center;
+    }
+
+    .site--presentation__email {
+        width: 32.7rem;
+        height: 4.6rem;
+        border-radius: 2.3rem;
+        opacity: 0.5;
+        margin-bottom: 1.6rem;
+    }
+
+    form {
+        order: 3;
+    }
+
+    .site--presentation__button--email {
+        position: relative;
+        width: 32.7rem;
+        top: unset;
+        left: unset;
+        cursor: pointer;
+    }
+
+    .site--presentation__logos--podcast {
+        display: flex;
+        align-items: center;
+        height: 1.7rem;
+        width: 31.5rem;
+        margin-bottom: 4.8rem;
+        order: 2;
+    }
+
+    .logo--spotify {
+        background-image: url("../images/desktop/spotify.svg");
+        width: 5.6rem;
+        height: 1.7rem;
+        margin-right: 2.3rem;
+    }
+    
+    .logo--apple--podcast {
+        background-image: url("../images/desktop/apple-podcast.svg");
+        width: 4.5rem;
+        height: 1.7rem;
+        margin-right: 2.5rem;
+    }
+    
+    .logo--google--podcast {
+        background-image: url("../images/desktop/google-podcasts.svg");
+        width: 7.3rem;
+        height: 1.1rem;
+        margin-right: 1.6rem;
+    }
+    
+    .logo--pocket--casts {
+        background-image: url("../images/desktop/pocket-casts.svg");
+        width: 7.7rem;
+        height: 1.5rem;
+    }
+    
+
+}
